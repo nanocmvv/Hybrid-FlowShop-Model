@@ -146,7 +146,7 @@ def custom_print_schedule(schedule, filename=None):
             )
 
     if filename:
-        fig.savefig(filename, dpi=600, facecolor='w')
+        fig.savefig(filename, dpi=150, facecolor='w')
     else:
         plt.tight_layout()
         plt.show()
