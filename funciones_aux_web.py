@@ -5,6 +5,8 @@ Created on Mon Feb 17 15:06:03 2025
 @author: 34608
 """
 import random, os
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scheptk.scheptk import Model
 
@@ -402,7 +404,7 @@ def gantt_completo(schedule, buffer_log, bloqueos, filename=None):
 
     # ✅ Guardar en archivo para mostrar en web
     if filename:
-        fig.savefig(filename, dpi=300, bbox_inches='tight')
+        fig.savefig(filename, dpi=150, bbox_inches='tight')
         plt.close(fig)
 
 
