@@ -404,7 +404,7 @@ def gantt_completo(schedule, buffer_log, bloqueos, filename=None):
 
     # ✅ Guardar en archivo para mostrar en web
     if filename:
-        fig.savefig(filename, dpi=150, bbox_inches='tight')
+        fig.savefig(filename, dpi=72, bbox_inches='tight')
         plt.close(fig)
 
 
